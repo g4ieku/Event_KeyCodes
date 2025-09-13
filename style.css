@@ -40,8 +40,13 @@ body {
   overflow: hidden;
 }
 
+#instruction h1 {
+  font-size: 4rem;
+  color: var(--white-color);
+}
+
 .container {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -116,6 +121,33 @@ footer .credit {
 
 footer .credit span {
   font-weight: 400;
+}
+
+/* ANIMATION */
+.text-glow {
+  color: var(--black-color);
+  animation: flicker 3s infinite alternate;
+}
+/* Flickering animation */
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+      0 0 25px var(--bg-color), 0 0 35px var(--bg-color),
+      0 0 45px var(--bg-color), 0 0 55px var(--bg-color),
+      0 0 80px var(--bg-color);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 /* MEDIA QUERIES */
