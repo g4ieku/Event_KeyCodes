@@ -45,7 +45,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
 .key {
@@ -56,6 +55,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  margin: 20px 10px;
   min-width: 175px;
   font-size: 2.4rem;
   font-weight: 900;
@@ -122,6 +122,16 @@ footer .credit span {
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 5.5rem;
+  }
+
+  .key {
+    width: 100%;
   }
 }
 
