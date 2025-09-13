@@ -79,6 +79,45 @@ body {
   color: var(--gray-color);
 }
 
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: var(--dark-color);
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+footer .icons a {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.5rem;
+  transition: transform 0.5s linear;
+}
+
+footer .icons a:hover {
+  background: var(--bg-color);
+  transform: rotate(360deg);
+}
+
+footer .credit {
+  font-size: 1.1rem;
+  color: var(--white-color);
+  font-weight: lighter;
+  padding: 0.5rem;
+}
+
+footer .credit span {
+  font-weight: 400;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 991px) {
   html {
